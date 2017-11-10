@@ -4,6 +4,7 @@ import json
 import mysql.connector as MySQLdb
 from pprint import pprint 
 
+'''
 graph = facebook.GraphAPI(access_token='EAABzvhV5PZBgBAKcq5gYS00mJdNHC0cfaCXU30E0RHYEPK0aNoeozj4wsGgB9yDuH6vws40twJCMqKGNJmJYXDAt1l6To6mv3jvrKcUJ2x9ZCBpDjANxyqVqw3JueaC3sq8jGcdmmZAyRCtvN6VTPSuTsaWfZAFwVALM2E6FAwZDZD',version='2.10')
 posts = graph.get_connections(id='me',connection_name='posts')
 
@@ -28,3 +29,8 @@ for obj in myfb_posts:
     except:
         pass
 
+'''
+with open('group_posts') as data_file:    
+    for val in data_file:
+        print(val)
+        #print('\n')
